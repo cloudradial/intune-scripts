@@ -34,7 +34,7 @@ e.x. "DataAgent-{company-name}-Current.exe"
 1. Verify the download is successful using your favorite web browser.
 
 ### Configure Intune
-1. Download or copy the example script below to a text editor and SaveAs "Install-CloudRadialDataAgent.ps1"
+1. [Download](https://raw.githubusercontent.com/cloudradial/intune-scripts/master/Example%201/Install-CloudRadialDataAgent.ps1) or Save the script below as "Install-CloudRadialDataAgent.ps1"
     ```
     $BlobSASUrl = "https://cloudradialexample.blob.core.windows.net/installer/DataAgent-contoso-Current.exe?sp=r&st=2019-06-21T15:27:15Z&se=2119-06-21T23:27:15Z&spr=https&sv=2018-03-28&sig=CJeiX55vp7VfwxPHSOx0kUreOZH%2B1AefwldFdK5Benk%3D&sr=b"
     $DataAgent = $(if($BlobSASUrl -match "([^/]*)\?") {$matches[1]})
